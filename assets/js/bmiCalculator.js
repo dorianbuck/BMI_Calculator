@@ -1,3 +1,10 @@
 const calculateMetricBMI = (weight, height) => {
-    return 20
+    let result
+    result = (weight / ((height / 100) * (height / 100))).toFixed(2)
+    return result
+}
+
+const getBMIClassification = (value) => {
+
+    return "normal"
 }
