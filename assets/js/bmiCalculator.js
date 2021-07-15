@@ -6,5 +6,22 @@ const calculateMetricBMI = (weight, height) => {
 
 const getBMIClassification = (value) => {
 
-    return "normal"
+   if (value < 18.5) {
+       return "underweight"
+   } else if (value < 25) {
+       return "normal weight"
+   }
+     else if (value < 30) {
+       return "overweight"
+   }
+     else if (value < 35) {
+       return "obesity class 1"
+   }
+     else if (value < 40.1) {
+       return "obesity class 2"
+   }
+     else  {
+       return "Extreme obesity class 3"
+     }
+
 }
